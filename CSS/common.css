@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?m9wufi');
+  src: url('../fonts/icomoon.eot?m9wufi#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?m9wufi') format('truetype'), url('../fonts/icomoon.woff?m9wufi') format('woff'), url('../fonts/icomoon.svg?m9wufi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  background-color: #F1F3F5;
+}
+/* fixed_none 粘性盒子 */
+div.fixed_none {
+  padding: 10px 0;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  z-index: 140;
+  width: 80px;
+  height: 290x;
+  background-color: #FFF;
+  border-radius: 15px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+div.fixed_none ul {
+  width: 100%;
+  height: 100%;
+}
+div.fixed_none ul li {
+  width: 100%;
+  height: 72.5px;
+}
+div.fixed_none ul li a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #999999;
+  transition: all 0.3s ease 0s;
+}
+div.fixed_none ul li a span {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-family: 'icomoon';
+}
+div.fixed_none ul li a p {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: 200;
+}
+div.fixed_none ul li a:hover {
+  color: #CF0A2C;
+}
+div.head_box {
+  width: 100%;
+}
+div.head_nav {
+  /* 头部黑色导航栏 */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  background-color: #000000;
+  letter-spacing: 1px;
+}
+div.head_nav .center {
+  position: relative;
+  width: 83%;
+  height: 100%;
+}
+div.head_nav .center .left {
+  float: left;
+  height: 100%;
+}
+div.head_nav .center .left li {
+  float: left;
+  height: 100%;
+}
+div.head_nav .center .left li:first-child {
+  padding-left: 0;
+}
+div.head_nav .center .left li:first-child a {
+  padding-left: 0;
+}
+div.head_nav .center .left li:last-child a {
+  border: 0;
+}
+div.head_nav .center ul a.head_nav_text {
+  width: 100%;
+  height: 100%;
+  padding: 0 12px 0 ;
+  border-right: 1px #484848 solid;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+div.head_nav .center ul a.head_nav_text em {
+  font-family: 'icomoon';
+  vertical-align: bottom;
+}
+div.head_nav .center ul a.head_nav_text i {
+  font-family: 'icomoon';
+}
+div.head_nav .center .right {
+  float: right;
+  height: 100%;
+}
+div.head_nav .center .right li {
+  float: left;
+  height: 100%;
+  font-family: 'icomoon';
+}
+div.head_nav .center .right li:nth-child(n+6) a {
+  border: 0;
+}
+div.head_nav .center .right li:last-child {
+  background-color: #424242;
+}
+div.head_nav .center .more_brilliant {
+  position: relative;
+  transition: all 0.3s ease-in-out 0s;
+}
+div.head_nav .center .more_brilliant dl {
+  display: none;
+  position: absolute;
+  z-index: 120;
+  right: 0;
+  top: 38px;
+  width: 120px;
+  background-color: #FFF;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  border-radius: 0 0 10px 10px;
+  animation: opacity 0.3s ease-in-out;
+}
+div.head_nav .center .more_brilliant dl a.more_brilliant_text {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  color: #333 !important;
+  border: 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 27px;
+}
+div.head_nav .center .more_brilliant dl a:hover {
+  color: #CF0A2C !important;
+}
+div.head_nav .center .nav {
+  width: 800px !important;
+  height: 190px;
+  border-radius: 0 0 10px 10px;
+}
+div.head_nav .center .nav dd {
+  width: 100%;
+  height: 100%;
+}
+div.head_nav .center .nav dd ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+div.head_nav .center .nav dd ul li {
+  flex: 9;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+div.head_nav .center .nav dd ul li div {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 150px;
+}
+div.head_nav .center .nav dd ul li div h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+div.head_nav .center .nav dd ul li div a {
+  margin: 3px 0;
+  padding: 0 !important;
+  font-size: 12px;
+  color: #737373;
+  white-space: nowrap;
+  text-align: left;
+}
+div.head_nav .center .nav dd ul li div a:hover {
+  color: #CF0A2C;
+}
+div.head_nav .center .nav dd ul li div.homeShop {
+  position: relative;
+}
+div.head_nav .center .nav dd ul li div.homeShop a {
+  margin-top: 55px;
+  text-align: center;
+}
+div.head_nav .center .nav dd ul li div.homeShop a:before {
+  content: '';
+  padding: 5px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(110, 110, 110, 0.2);
+  border-radius: 50%;
+  color: #CF0A2C;
+  font-size: 40px;
+  font-weight: 200;
+}
+div.head_nav .center .phone_nav {
+  position: absolute;
+  width: 240px !important;
+  height: 380px;
+  border-radius: 0 0 10px 10px;
+}
+div.head_nav .center .phone_nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+div.head_nav .center .phone_nav ul li {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+}
+div.head_nav .center .phone_nav ul li div {
+  display: flex;
+  width: 85%;
+  height: 80%;
+}
+div.head_nav .center .phone_nav ul li div div {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+div.head_nav .center .phone_nav ul li div div h3 {
+  margin-left: 5px;
+  font-size: 16px;
+}
+div.head_nav .center .phone_nav ul li div div p {
+  margin-left: 5px;
+  padding: 3px 0;
+  font-size: 12px;
+  color: #CF0A2C;
+  font-weight: 600;
+}
+div.head_nav .center .phone_nav ul li div div ol {
+  position: relative;
+  margin-top: 18px;
+  display: flex;
+  width: 100%;
+}
+div.head_nav .center .phone_nav ul li div div ol li {
+  flex: 3;
+  border: 0 !important;
+  font-size: 18px;
+  color: #b3b3b3;
+}
+div.head_nav .center .phone_nav ul li:nth-child(2) {
+  border: 1px solid #bdbdbd;
+  border-left: 0;
+  border-right: 0;
+}
+div.head_nav .center .shop_car_icon {
+  position: relative;
+  position: absolute;
+  width: 300px !important;
+  height: 170px;
+  border-radius: 0 0 10px 10px;
+}
+div.head_nav .center .shop_car_icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: 100px;
+  height: 100px;
+}
+div.head_nav .center .shop_car_icon::after {
+  content: '暂无选购商品';
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #a1a1a1;
+}
+div.logo_box {
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+div.logo_box div.logo_nav {
+  /* 头部 logo 导航栏 */
+  display: flex;
+  justify-content: center;
+  z-index: 120;
+  width: 100%;
+  height: 75px;
+  background-color: #FFF;
+}
+div.logo_box div.logo_nav .center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 83%;
+  height: 100%;
+}
+div.logo_box div.logo_nav .center .logo {
+  float: left;
+  margin-right: 40px;
+  width: 130px;
+  height: 100%;
+  background: url(../images/logo_app_apk.png) no-repeat center left;
+  background-size: 80%;
+}
+div.logo_box div.logo_nav .center ul {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+div.logo_box div.logo_nav .center ul li {
+  float: left;
+  padding: 0 20px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+div.logo_box div.logo_nav .center ul li a {
+  color: #000000;
+}
+div.logo_box div.logo_nav .center ul li a:hover {
+  color: #CF0A2C;
+}
+div.logo_box div.logo_nav .center ul li:nth-child(1) a i {
+  font-size: 20px;
+  font-family: 'icomoon';
+  vertical-align: bottom;
+}
+div.logo_box div.logo_nav .center .search {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: #b6b6b6;
+  text-align: center;
+  font-family: 'icomoon';
+  line-height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+div.logo_box div.logo_nav .center .search:hover {
+  color: #999999;
+}
+div.logo_box div.logo_nav .search_box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45%;
+  height: 55%;
+  animation: opacity 0.5s ease-in-out;
+}
+div.logo_box div.logo_nav .search_box form {
+  width: 100%;
+  height: 100%;
+}
+div.logo_box div.logo_nav .search_box form input[type="search"] {
+  padding: 0 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 1px #333 solid;
+  font-size: 16px;
+}
+div.logo_box div.logo_nav .search_box form .left {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-family: 'icomoon';
+  color: #939393;
+  cursor: pointer;
+}
+div.logo_box div.logo_nav .search_box form .right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-family: 'icomoon';
+  color: #939393;
+  cursor: pointer;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

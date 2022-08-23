@@ -1,0 +1,48 @@
+        /* 把所有标签内外边距清零 */
+        /* 或者 html,body,ul,li,ol,dl,dd,dtp,h1,h2,h3,h4.h5,h6,form,fieldset,legend,img{margin:O;padding:0} */
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* CSS3盒子模型 */
+            box-sizing: border-box;
+        }
+        /* em和i斜体文字不倾斜 */
+        em,
+        i {
+            font-style: normal;
+        }
+        /* 去掉li的小圆点 */
+        li {
+            list-style: none;
+        }
+        img {
+            /* border: 0px;照顾低版本浏览器如果图片外面包含了链接会有边框的问题 */
+            border: 0px;
+            /* 取消图片底测有缝隙的问题 */
+            vertical-align: middle;
+        }
+        /* 当鼠标经过时button按钮的时候，鼠标变小手 */
+        button {
+            cursor: pointer;
+        }
+        /* 设置链接初始颜色/取下下划线 */
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        body {
+            /* CSS3 抗锯齿让文字显示更清晰 */
+            -webkit-font-smoothing: antialiased;
+        }
+        /* 图片100%尺寸 */
+        img {
+            width: 100%; height: 100%;
+        }
+    /* 表单搜索框初始化 */
+        input {
+            /* 去掉鼠标点击搜索框后的边框颜色和大小 */
+            outline: none;
+        }
+        input[type="search"] {
+            padding-left: 15px;
+        }

@@ -1,0 +1,484 @@
+div.Head_advertising {
+  /* 头部隐藏广告 */
+  position: relative;
+  width: 100%;
+  height: 90px;
+}
+div.Head_advertising a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/Head-advertising.png) no-repeat center;
+  background-size: 132.555% 100%;
+}
+div.Head_advertising i {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: 'icomoon';
+  line-height: 25px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+div.banner {
+  /* banner 大盒子 */
+  position: relative;
+  z-index: 111;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+div.banner ul.banner_img {
+  /* 图片 */
+  position: absolute;
+  left: 0;
+  width: 900%;
+  height: 550px;
+}
+div.banner ul.banner_img li {
+  float: left;
+  width: 11.1111%;
+  height: 100%;
+}
+div.banner ul.banner_img li a {
+  display: inline-block;
+  width: 130%;
+  height: 100%;
+}
+div.banner ul.navItem {
+  position: absolute;
+  top: 50%;
+  left: 8.5%;
+  transform: translateY(-50%);
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 91%;
+  background-color: #FFFFFF;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+div.banner ul.navItem li {
+  flex: 12;
+  display: flex;
+  align-items: center;
+}
+div.banner ul.navItem li a {
+  padding: 0 30px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #777777;
+  font-size: 14px;
+  line-height: calc((550px * 0.91) / 12);
+  white-space: nowrap;
+}
+div.banner ul.navItem li a i {
+  position: absolute;
+  right: 18px;
+  font-size: 16px;
+  font-family: 'icomoon';
+}
+div.banner ul.navItem li a:hover {
+  color: #252525;
+}
+div.banner .LR_icon {
+  position: absolute;
+  top: 50%;
+  right: 8.5%;
+  transform: translateY(-50%);
+  width: calc(83% - 200px);
+  height: 1px;
+}
+div.banner .LR_icon a {
+  margin: 0 15px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  font-family: 'icomoon';
+  line-height: 60px;
+  color: #fff;
+  font-size: 25px;
+}
+div.banner .LR_icon a:last-child {
+  float: right;
+}
+div.banner .LR_icon a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+div.banner ul.banner_img_icon {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+div.banner ul.banner_img_icon li {
+  margin: 0 5px;
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+div.banner ul.banner_img_icon .beColor {
+  background-color: #FFF;
+  width: 15px;
+}
+div.hotWord_nav {
+  /* 热点词板块 */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+  height: 340px;
+}
+div.hotWord_nav ul.icon {
+  flex: 1;
+  display: flex;
+}
+div.hotWord_nav ul.icon li {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.hotWord_nav ul.icon li a {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 70%;
+}
+div.hotWord_nav ul.icon li a img {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 47%;
+  transition: all 0.3s ease 0s;
+}
+div.hotWord_nav ul.icon li a i {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  white-space: nowrap;
+  transition: all 0.3s ease 0s;
+}
+div.hotWord_nav ul.icon li a:hover img {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+div.hotWord_nav ul.icon li a:hover i {
+  color: #9a9a9a;
+}
+div.hotWord_nav ul.img_nav {
+  display: flex;
+  width: 100%;
+  height: 195px;
+}
+div.hotWord_nav ul.img_nav li {
+  flex: 4;
+  margin-right: 12px;
+  transition: all 0.3s ease 0s;
+}
+div.hotWord_nav ul.img_nav li img {
+  width: 100%;
+  height: 100%;
+}
+div.hotWord_nav ul.img_nav li:last-child {
+  margin: 0;
+}
+div.hotWord_nav ul.img_nav li:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+.time_limit {
+  margin: 30px auto;
+  width: 83%;
+  height: 710px;
+}
+.time_limit .top,
+.time_limit .bottom {
+  margin-bottom: 50px;
+}
+.time_limit .contDown_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 180px;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 31px;
+}
+.time_limit .contDown_box div {
+  height: 100%;
+  background-color: #CE0E2D;
+  border-radius: 5px;
+  color: #FFF;
+  text-align: center;
+  line-height: 31px;
+  font-size: 16px;
+}
+.time_limit .contDown_box span {
+  margin: 0 5px;
+  font-size: 16px;
+}
+.time_limit .contDown_box::after {
+  content: '距结束';
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+  font-size: 19px;
+  color: #909090;
+}
+.time_limit div {
+  width: 100%;
+  height: 50%;
+}
+.time_limit div h3 {
+  position: relative;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.time_limit div h3 a {
+  float: right;
+  font-size: 14px;
+  color: #909090;
+  font-family: 'icomoon';
+}
+.time_limit div ul {
+  display: flex;
+  flex-direction: row;
+  height: 85.6666%;
+}
+.time_limit div ul li {
+  flex: 5;
+  position: relative;
+  margin-left: 12px;
+  background-color: #FFF;
+  transition: all 0.3s ease 0s;
+}
+.time_limit div ul li a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.time_limit div ul li a img {
+  margin: 25px 0;
+  position: absolute;
+  left: calc(50% - (130px / 2));
+  width: 140px;
+  height: 140px;
+  transition: all 0.3s ease 0s;
+}
+.time_limit div ul li a .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 44%;
+}
+.time_limit div ul li a .text span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 0 3px;
+  height: 18px;
+  background-color: #D10B2D;
+  font-size: 12px;
+  border-radius: 5px;
+  line-height: 17.5px;
+  color: #FFF;
+}
+.time_limit div ul li a .text p {
+  margin: 22px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.time_limit div ul li a .text i {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #909090;
+  letter-spacing: 1px;
+}
+.time_limit div ul li a .text em {
+  margin-top: 15px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #CE0E2D;
+}
+.time_limit div ul li a .text em del {
+  font-size: 12px;
+  color: #909090;
+}
+.time_limit div ul li:first-child {
+  margin: 0;
+}
+.time_limit div ul li.time_limit_lis:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+.time_limit div ul li.time_limit_lis:hover img {
+  transform: scale(1.1);
+}
+.time_limit div ul li.setInterval {
+  background-color: #EFE6EA;
+}
+.time_limit div ul li.setInterval i {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  font-family: 'icomoon';
+  color: #CE0E2D;
+}
+.time_limit div ul li.setInterval dl {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+}
+.time_limit div ul li.setInterval dl dd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33.3333%;
+}
+.time_limit div ul li.setInterval dl dd p {
+  color: #6d6d6d;
+  font-size: 16px;
+  text-align: center;
+  line-height: 300%;
+}
+.time_limit div ul li.setInterval dl dd div {
+  margin: 0 5px;
+  width: 40px;
+  height: 43px;
+  background-color: #605B5D;
+  border-radius: 5px;
+  color: #FFF;
+  text-align: center;
+  line-height: 43px;
+}
+.time_limit div ul li.setInterval dl dd span {
+  color: #797979;
+}
+.hotStyle {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 83%;
+  height: 620px;
+}
+.hotStyle h3 {
+  position: relative;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hotStyle ul {
+  width: 100%;
+  height: 100%;
+}
+.hotStyle ul .wisdom_office {
+  width: calc((100% / 5) * 2 - 7.2px);
+}
+.hotStyle ul .wisdom_office img {
+  width: 100%;
+  height: 100%;
+}
+.hotStyle ul li {
+  float: left;
+  margin-left: 12px;
+  width: calc((100% / 5) - 9.6px);
+  height: calc(50% - 6px);
+  background-color: #FFF;
+  transition: all 0.3s ease 0s;
+}
+.hotStyle ul li a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.hotStyle ul li.hotStyle_other img {
+  margin: 25px 0;
+  position: absolute;
+  left: calc(50% - (130px / 2));
+  width: 140px;
+  height: 140px;
+  transition: all 0.3s ease 0s;
+}
+.hotStyle ul li.hotStyle_other .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 44%;
+}
+.hotStyle ul li.hotStyle_other .text p {
+  margin: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.hotStyle ul li.hotStyle_other .text p span {
+  display: inline-block;
+  padding: 0 3px;
+  height: 18px;
+  background-color: #D10B2D;
+  font-size: 12px;
+  border-radius: 5px;
+  line-height: 17.5px;
+  vertical-align: top;
+  color: #FFF;
+}
+.hotStyle ul li.hotStyle_other .text em {
+  margin-top: 8px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #CE0E2D;
+}
+.hotStyle ul li.hotStyle_other .text em del {
+  font-size: 12px;
+  color: #909090;
+}
+.hotStyle ul li:nth-child(-n+4) {
+  margin-bottom: 12px;
+}
+.hotStyle ul li:nth-child(1),
+.hotStyle ul li:nth-child(5) {
+  margin-left: 0;
+}
+.hotStyle ul li:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+.hotStyle ul li.hotStyle_other:hover img {
+  transform: scale(1.1);
+}
